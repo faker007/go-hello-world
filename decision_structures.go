@@ -29,6 +29,6 @@ func main() {
 	} else if myNum == 101 || isTrue {
 		println("myNum is 101 or isTrue is true")
 	} else {
-		println("myNum is 100 or isTrue is false")
+		println("myNum is 100 or isTrue is false2")
 	}
 }
