@@ -1,5 +1,7 @@
 package main
 
+import "log"
+
 func main() {
 	var isTrue bool
 
@@ -30,5 +32,21 @@ func main() {
 		println("myNum is 101 or isTrue is true")
 	} else {
 		println("myNum is 100 or isTrue is false2")
+	}
+
+	myVar := "cat"
+
+	switch myVar {
+	case "cat":
+		log.Println("cat is set to cat")
+		
+	case "dog":
+		log.Println("cat is set to dog")
+	
+	case "fish":
+		log.Println("cat is set to fish")
+
+	default:
+		log.Println("cat is something else") 
 	}
 }
