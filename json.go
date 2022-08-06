@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 )
 
@@ -60,5 +61,11 @@ func main() {
 	
 	mySlice = append(mySlice, m2)
 
-	newJson, err := json.Marshal()
+	newJson, err := json.MarshalIndent(mySlice, "", "  ")
+
+	if err != nil {
+		log.Println("Error marshalling JSON:", err)	
+	}
+
+	fmt.Println(string(newJson))
 }
